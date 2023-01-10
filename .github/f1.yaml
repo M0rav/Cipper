@@ -1,0 +1,11 @@
+name: Deploy
+on: psuh
+jobs:
+  deploy:
+  runs-on: ubuntu-20.04
+  steps:
+  - uses: action/chechkout@v3
+  - uses: actions/upload-artifact@v3
+ with:
+    name: app
+    path: public
